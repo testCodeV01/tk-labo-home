@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TK Labo</title>
+<meta name="description" content="TK Labo は、数学・物理のノート共有サイト ScienceHub の運営と、Web アプリの受託開発をしています。">
+<link rel="canonical" href="https://tk-labo.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23F4D42A'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121917" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --ink: #1B3B38;
+    --ink-3: #586B67;
+    --line: #DFE8E6;
+    --teal: #00A2A8;
+    --yellow: #F4D42A;
+    --f-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121917;
+      --ink: #EEF4F2;
+      --ink-3: #A3B4B0;
+      --line: #33423E;
+      --teal: #4DD4C8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--f-sans);
+    line-height: 1.7;
+  }
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem 1rem 3rem;
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin: 0 0 .5rem;
+    font-size: 1.75rem;
+    letter-spacing: .02em;
+  }
+  h1::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: var(--yellow);
+    flex: none;
+  }
+  .lead {
+    margin: 0 0 1rem;
+    color: var(--ink-3);
+  }
+  .about {
+    margin: 0 0 2.5rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+  }
+  li { border-bottom: 1px solid var(--line); }
+  a {
+    display: block;
+    padding: 1.1rem .25rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover .name, a:focus-visible .name { color: var(--teal); text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+  .name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .name::after { content: " →"; color: var(--teal); }
+  .desc {
+    display: block;
+    color: var(--ink-3);
+    font-size: .95rem;
+  }
+  footer {
+    margin-top: 3rem;
+    color: var(--ink-3);
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>TK Labo</h1>
+  <p class="lead">数学・物理のノート共有サイトの運営と、Web アプリの受託開発をしています。</p>
+  <p class="about">趣味で、数学や物理の本を読んだり、ノートを書いたりしています。</p>
+  <ul>
+    <li>
+      <a href="https://sciencehub.tk-labo.com/">
+        <span class="name">ScienceHub</span>
+        <span class="desc">数学・物理のノート共有サイト。LaTeX で書いたノートを公開・閲覧できます。</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://works.tk-labo.com/">
+        <span class="name">開発のお仕事・ポートフォリオ</span>
+        <span class="desc">Web アプリの受託開発の実績と、お仕事のご相談の窓口です。</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://sciencehub.hatenablog.com/">
+        <span class="name">ブログ</span>
+        <span class="desc">ScienceHub の運営ブログです。</span>
+      </a>
+    </li>
+  </ul>
+  <footer>&copy; TK Labo</footer>
+</main>
+</body>
+</html>
